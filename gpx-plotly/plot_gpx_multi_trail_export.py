@@ -4,6 +4,7 @@ import plotly.graph_objs as go
 import itertools
 import os
 from pathlib import Path
+import time
 
 IMPORTS_DIR = Path("imports")
 EXPORTS_DIR = Path("exports")
@@ -73,15 +74,8 @@ def plot_3d_trails(tracks, filenames, align=False, export_html=False):
 
     if export_html:
         EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
-
-        if filenames:
-            name_fragment = "_".join(Path(f).stem for f in filenames[:3])
-            if len(filenames) > 3:
-                name_fragment += "_plus_more"
-        else:
-            name_fragment = "combined_trail"
-
-        outpath = EXPORTS_DIR / f"{name_fragment}.html"
+	unixtime_integer = int(time.time())    
+        outpath = EXPORTS_DIR / f"gp_{unixtime_integer}.html"
         fig.write_html(str(outpath))
         print(f"[✓] Exported HTML to: {outpath.resolve()}")
 
