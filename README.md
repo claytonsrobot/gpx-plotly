@@ -2,8 +2,14 @@
 https://gpx-plotly.pages.dev
 
 # Why:
-Finally, I can enjoy all of my hiking export files from the hikerr app.
-See multiple tracks with coincident starting points to easily compare different hikes spatially.
+Finally, I can enjoy all of my hiking track export GPX files, from various sources. These can come from your Garmin watch, your Strava account, or many other sources. My personal favorite is the Hikerr app on Android, which is free and includes free file export and local download.
+
+Use this gpx-plotly Python tool to see your multiple GPX tracks all at once. You can enjoy high detail by setting coincident starting points to easily compare different hikes, by using the '--align' flag. 
+
+Use default no flag to show tracks in dispersed literal space.
+
+Plots are scaled for maximum detail.
+
 HTML export can be embedded into web apps.
 
 # Steps for success:
