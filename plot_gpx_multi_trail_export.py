@@ -74,8 +74,8 @@ def plot_3d_trails(tracks, filenames, align=False, export_html=False):
 
     if export_html:
         EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
-	#unixtime_integer = int(time.time())    
-	timestamp = datetime.now().strftime("%Y%B%d_%H%M")  # e.g., "2025January25_0800"
+        #unixtime_integer = int(time.time())    
+        timestamp = datetime.now().strftime("%Y%B%d_%H%M")  # e.g., "2025January25_0800"
         outpath = EXPORTS_DIR / f"gp_{timestamp}.htm"
         #outpath = EXPORTS_DIR / f"gp_{unixtime_integer}.html"
         fig.write_html(str(outpath))
