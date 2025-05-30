@@ -16,6 +16,7 @@ HTML export can be embedded into web apps.
 - Add your GPX files to the import directory.
 - Run the software to generate an HTML file export.
 ```
+git clone https://github.com/claytonsrobot/gpx-plotly/
 poetry install
 poetry run python .\plot_gpx_multi_trail_export.py --align
 #or
