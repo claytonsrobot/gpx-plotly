@@ -1,5 +1,5 @@
 # Example Site:
-gpx-plotly.pages.dev
+(https://gpx-plotly.pages.dev)
 
 # Why:
 Finally, I can enjoy all of my hiking export files from the hikerr app.
