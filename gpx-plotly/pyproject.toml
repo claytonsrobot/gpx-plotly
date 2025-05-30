@@ -1,5 +1,5 @@
 [project]
-name = "gpx"
+name = "gpx-plotly"
 version = "0.1.0"
 description = "Poetry is here for environment management."
 authors = [
